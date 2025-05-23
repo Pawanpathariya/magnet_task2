@@ -24,13 +24,13 @@ const ans=product.map((item)=>{
         <>
         <div className='card1' style={{width:"300px",margin:"20px",padding:"20px",borderRadius:"20px",backgroundColor:"rgb(235, 243, 243)" }}>
     <div>
-  <img src={item.image} alt="" height={250} width={250} />
+  <img src={item.image} alt="" height={250} width={260} style={{borderRadius:"20px"}} />
     </div>
             <div style={{height:"250px"}}>
-            <h4 style={{color:"blue"}}>Name : {item.title} </h4>  
+            <h4 style={{color:"blue"}}>{item.title} </h4>  
             <p> <b>Category :</b>  {item.category}</p>
             {/* <p>Description : {item.description}</p> */}
-            <p><b> Price :</b> {item.price}</p>
+            <p><b> Price :</b> {item.price} <b>$</b> </p>
             </div>    
 
                <Button variant="primary" onClick={()=>{ dispatch(addtoCart({...item,quantity:1}))}} >Add to Cart</Button>  

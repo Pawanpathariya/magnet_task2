@@ -21,9 +21,10 @@ const Topbar = () => {
         <Nav.Link href="#pricing">Pricing</Nav.Link>
       </Nav>
     </Container>
-    {length} <FaShoppingCart style={{marginRight:"20px"}} onClick={()=>{
+    <p style={{fontSize:"20px",paddingTop:"7px"}}>   {length} <FaShoppingCart style={{marginRight:"20px"}} onClick={()=>{
   navigate('/cart')
-    }} />
+    }} /></p>
+ 
   </Navbar>
   )
 }

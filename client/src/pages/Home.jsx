@@ -43,7 +43,7 @@ const ans=product.map((item)=>{
   return (
    <>
    <div className='container'>
-    <h3 style={{textAlign:"center",marginTop:"10px"}} >Products</h3>
+    <h3 style={{textAlign:"center",marginTop:"10px",color:"blue"}} >Products</h3>
 <div className='cardcont'>
 {ans}
 

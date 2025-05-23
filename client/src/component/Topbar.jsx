@@ -12,13 +12,11 @@ const Topbar = () => {
   const cart=useSelector(state=>state.cart)
   const length=cart.length;
   return (
-    <Navbar bg="dark" data-bs-theme="dark">
+    <Navbar bg="primary" data-bs-theme="dark">
     <Container>
-      <Navbar.Brand as={Link} to="/home" >Navbar</Navbar.Brand>
+      <Navbar.Brand as={Link} to="/home" >The Shop</Navbar.Brand>
       <Nav className="me-auto">
         <Nav.Link as={Link} to="/home"  >Home</Nav.Link>
-        <Nav.Link href="#features">Features</Nav.Link>
-        <Nav.Link href="#pricing">Pricing</Nav.Link>
       </Nav>
     </Container>
     <p style={{fontSize:"20px",paddingTop:"7px"}}>   {length} <FaShoppingCart style={{marginRight:"20px"}} onClick={()=>{
